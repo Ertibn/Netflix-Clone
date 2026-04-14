@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Header.css";
+import logo from "../../Assets/images/net logo.jpg";
 
 const Header = () => {
   return (
@@ -7,10 +8,10 @@ const Header = () => {
       <div className='header-container'> 
         <div className='header-left'>
           <ul>
-            {/* <li>
-              <img src='#' alt=''/>
-            </li> */}
-            <li>Netflix</li>
+            <li>
+  <img src={netLogo} alt="Netflix logo" width="100" />
+</li>
+           
             <li>Home </li>
             <li>TVShows </li>
             <li>Movies </li>
@@ -19,11 +20,7 @@ const Header = () => {
             <li>Browse by Languages</li>
           </ul>
         </div>
-        {/* <div>
-          <ul>
-            <li>search</li>
-          </ul>
-        </div> */}
+       
       </div>
 
     </div>
