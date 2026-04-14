@@ -5,22 +5,19 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(20, 20, 20);
-    background-color: transparent;
+    /* background-color: transparent; */
     height: 10vh;
     color: white;
     transition: all 0.5s;
     transition-timing-function: ease-in;
 z-index: 1;
-background-color: rgb(68, 0, 255);
-text-decoration: none;
+/* background-color: rgb(68, 0, 255); */
+
 
 } 
 
-/* .nav-black{
-    background-color: rgb(20,  20, 20);
 
-} */
- .header_container{
+ .header-container{
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -29,19 +26,24 @@ text-decoration: none;
  }
 
  .header-left ul{
-    width: 160%;
+ width: 150%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
     cursor: pointer;
+  
 
  }
+  
 
- .header-right ul{
-width: 150%;
+   .header-right ul{
+width: 130%;
 display: flex;
 justify-content: space-between;
 list-style: none;
 cursor: pointer;
- }
+ 
+ }  
+
+ 
