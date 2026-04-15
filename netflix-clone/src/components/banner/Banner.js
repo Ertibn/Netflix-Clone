@@ -42,7 +42,7 @@ const Banner = () => {
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
 
-        <div className="banner__buttons">
+        <div className="banner__button">
           <button className="banner__button play">Play</button>
           <button className="banner__button">My List</button>
         </div>
