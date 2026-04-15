@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 
 import axios from "../../utils/axios";
 import requests from "../../utils/request";
+import "./banner.css"
 
 function truncate(str, n) {
   return str?.length > n ? str.substr(0, n - 1) + "..." : str;
 }
 
 const Banner = () => {
-  const [movie, setMovie] = useState({}); // ✅ fixed here
+  const [movie, setMovie] = useState({}); 
 
   useEffect(() => {
     (async () => {
@@ -26,6 +27,7 @@ const Banner = () => {
   }, []);
 
   return (
+
     <div
       className="banner"
       style={{
