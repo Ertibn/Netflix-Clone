@@ -1,23 +1,30 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 
-import React from "react";
+import axios from "../../utils/axios";
+import requests from "../../utils/request";
+
+function truncate(str, n) {
+  return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+}
 
 const Banner = () => {
-    const[movie, setmovie] = useState([]);
-    useEffect(() => {
-  (async () => {
-    try {
-      const request = await axios.get(requests.fetchNetflixOriginals);
-      setMovie(
-        request.data.results[
-          Math.floor(Math.random() * request.data.results.length)
-        ]
-      );
-    } catch (error) {
-      console.log("error", error);
-    }
-  })();
-}, []);
+  const [movie, setMovie] = useState({}); // ✅ fixed here
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const request = await axios.get(requests.fetchNetflixOriginals);
+        setMovie(
+          request.data.results[
+            Math.floor(Math.random() * request.data.results.length)
+          ]
+        );
+      } catch (error) {
+        console.log("error", error);
+      }
+    })();
+  }, []);
+
   return (
     <div
       className="banner"
