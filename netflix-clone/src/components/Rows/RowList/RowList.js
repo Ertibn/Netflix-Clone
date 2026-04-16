@@ -1,14 +1,18 @@
 import React from 'react'
 import Row  from '../Row/Row'
+import requests from './../../../utils/request';
 
 const RowList = () => {
   return (
     <>
+      <Row 
+      title="NETFLIX ORIGINALS"
+      fetchUrl={requests.  fetchNetflixOriginals}
+      />
+      {/* <Row />
       <Row />
       <Row />
-      <Row />
-      <Row />
-      <Row />
+      <Row /> */}
     </>
   )
 }
