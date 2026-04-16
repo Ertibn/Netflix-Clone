@@ -8,13 +8,13 @@ const RowList = () => {
       <Row 
       title="NETFLIX ORIGINALS"
       fetchUrl={requests.  fetchNetflixOriginals}
+      isLargeRow={true}
       />
-      {/* <Row />
-      <Row />
-      <Row />
-      <Row /> */}
+      <Row title="Treading Now" fetchUrl={requests.fetchTrending}
+      isLargeRow={true}
+      />
     </>
   )
 }
 
-export default RowList
+export default RowList;
