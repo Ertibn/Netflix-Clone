@@ -13,7 +13,7 @@ const RowList = () => {
       <Row title="Treading Now" fetchUrl={requests.fetchTrending}
        
   /> 
-      <Row title="Top Rated" fetchUrl={requests.fetchTopRated}
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRatedMovies}
        
   /> 
       <Row title="Action Movies" fetchUrl={requests.fetchActionMovies}
@@ -30,6 +30,7 @@ const RowList = () => {
       />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries}
        />
+      <Row title="Tv Show" fetchUrl={requests.fetchTvShow}/>
     </>
   )
 }
