@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='footer_outer_container'>
   <div className='footer_inner_container'>
 
-    {/* Icons */}
+  
     <div className='footer_icons'>
       <ul>
         <li><FacebookOutlinedIcon /></li>
@@ -18,7 +18,7 @@ const Footer = () => {
       </ul>
     </div>
 
-    {/* Columns */}
+    
     <div className="footer_data">
       <div>
         <ul>
@@ -53,12 +53,11 @@ const Footer = () => {
       </div>
     </div>
 
-    {/* Service Code */}
+   
     <div className="service_code">
       <p>Service Code</p>
     </div>
 
-    {/* Copyright */}
     <div className="copy_write">
       <p>&copy; 1997-2024 Netflix, Inc.</p>
     </div>
